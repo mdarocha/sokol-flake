@@ -34,4 +34,4 @@ jobs:
           EOF" >> "$GITHUB_ENV"
 
       - name: Build packages
-        run: echo $FLAKE_PACKAGES | xargs nix build
+        run: echo $FLAKE_PACKAGES | xargs nix build -L

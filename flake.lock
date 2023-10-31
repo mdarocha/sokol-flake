@@ -90,7 +90,6 @@
       },
       "original": {
         "owner": "floooh",
-        "ref": "master",
         "repo": "sokol",
         "type": "github"
       }

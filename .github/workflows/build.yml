@@ -22,7 +22,8 @@ jobs:
         id: packages
         run: |
           FLAKE_PACKAGES=$(nix flake show --json | jq -r '.packages["x86_64-linux"] | keys | map(".#\(.)") | .[]')
-          echo "LIST='$FLAKE_PACKAGES'" >> $GITHUB_OUTPUT
+          echo "$FLAKE_PACKAGES"
+          echo "FLAKE_PACKAGES='$FLAKE_PACKAGES'" >> "$GITHUB_ENV"
 
       - name: Build packages
-        run: echo "${{ steps.vars.outputs.packages.LIST }}" | xargs nix build
+        run: echo "$FLAKE_PACKAGES" | xargs nix build

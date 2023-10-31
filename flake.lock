@@ -1,5 +1,22 @@
 {
   "nodes": {
+    "fips-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1696699479,
+        "narHash": "sha256-sRIlQsnSJz8klmhoSlw7CdW+RQONH8YL4dbF0U9by6k=",
+        "owner": "floooh",
+        "repo": "fips",
+        "rev": "36ae6b60a5d6d8c6a5661f8cf56b474c28d9bdaa",
+        "type": "github"
+      },
+      "original": {
+        "owner": "floooh",
+        "ref": "master",
+        "repo": "fips",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -15,6 +32,23 @@
       "original": {
         "owner": "numtide",
         "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "handmade-math-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1676919826,
+        "narHash": "sha256-hmQXZRqgJOztvqmekRRnuF8bjPF3ZczKDfCVZv4aDvY=",
+        "owner": "HandmadeMath",
+        "repo": "HandmadeMath",
+        "rev": "422bc588e9e8ae580f472f05e47c01a646acff38",
+        "type": "github"
+      },
+      "original": {
+        "owner": "HandmadeMath",
+        "ref": "v2.0.0",
+        "repo": "HandmadeMath",
         "type": "github"
       }
     },
@@ -36,8 +70,46 @@
     },
     "root": {
       "inputs": {
+        "fips-src": "fips-src",
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
+        "handmade-math-src": "handmade-math-src",
+        "nixpkgs": "nixpkgs",
+        "sokol-src": "sokol-src",
+        "sokol-tools-src": "sokol-tools-src"
+      }
+    },
+    "sokol-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698693616,
+        "narHash": "sha256-zHEUUxeGZ45eDqJRZrJ6Wm0SOvlSuhAEvuVaJWr199M=",
+        "owner": "floooh",
+        "repo": "sokol",
+        "rev": "bd7fa9300dc2e2edca087cf436d1c5c07bd754fc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "floooh",
+        "ref": "master",
+        "repo": "sokol",
+        "type": "github"
+      }
+    },
+    "sokol-tools-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1698601223,
+        "narHash": "sha256-8ThkHvuVJJqWa6hxrDd5Sl5MGqHdS0CGujbTag5igtU=",
+        "owner": "floooh",
+        "repo": "sokol-tools",
+        "rev": "d49c3b089d341481c327fb88d38b914abda2a363",
+        "type": "github"
+      },
+      "original": {
+        "owner": "floooh",
+        "ref": "master",
+        "repo": "sokol-tools",
+        "type": "github"
       }
     },
     "systems": {

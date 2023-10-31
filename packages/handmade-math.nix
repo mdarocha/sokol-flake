@@ -1,15 +1,10 @@
-{ lib, stdenv, fetchFromGitHub }:
+{ src, lib, stdenv }:
 
 stdenv.mkDerivation {
   pname = "HandmadeMath";
   version = "2.0.0";
 
-  src = fetchFromGitHub {
-    owner = "HandmadeMath";
-    repo = "HandmadeMath";
-    rev = "v2.0.0";
-    hash = "sha256-hmQXZRqgJOztvqmekRRnuF8bjPF3ZczKDfCVZv4aDvY=";
-  };
+  inherit src;
 
   dontBuild = true;
   dontConfigure = true;

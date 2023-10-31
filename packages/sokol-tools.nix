@@ -1,4 +1,6 @@
-{ lib
+{ src
+, fips
+, lib
 , stdenv
 , fetchFromGitHub
 , python3
@@ -6,25 +8,10 @@
 , ninja
 }:
 
-let
-  fips = fetchFromGitHub {
-    owner = "floooh";
-    repo = "fips";
-    rev = "36ae6b60a5d6d8c6a5661f8cf56b474c28d9bdaa";
-    hash = "sha256-sRIlQsnSJz8klmhoSlw7CdW+RQONH8YL4dbF0U9by6k=";
-  };
-in
 stdenv.mkDerivation {
-  pname = "sokol-tools";
-  version = "unstable-2023-10-22";
+  name = "sokol-tools";
 
-  src = fetchFromGitHub {
-    owner = "floooh";
-    repo = "sokol-tools";
-    rev = "9cdfb422bccd207b94cfde80c98d491e69c9814c";
-    hash = "sha256-7gO6FUs9J7S03qnvaTgkt4Uc8j86ZbCC7blr+2pVFLw=";
-    fetchSubmodules = true;
-  };
+  inherit src;
 
   nativeBuildInputs = [
     python3

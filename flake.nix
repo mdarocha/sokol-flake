@@ -5,12 +5,12 @@
     flake-utils.url = "github:numtide/flake-utils";
 
     sokol-src = {
-      url = "github:floooh/sokol/master";
+      url = "github:floooh/sokol";
       flake = false;
     };
 
     sokol-tools-src = {
-      url = "github:floooh/sokol-tools/master";
+      url = "git+https://github.com/floooh/sokol-tools?submodules=1";
       flake = false;
     };
 

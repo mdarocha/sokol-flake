@@ -25,6 +25,9 @@
     };
   };
 
+  nixConfig.extra-substituters = "https://sokol-flake.cachix.org";
+  nixConfig.extra-trusted-public-keys = "sokol-flake.cachix.org-1:kOmbfauX2cnDJ/8OQPl7psS0ysc4zVMAJECoYekpsbY=";
+
   outputs = inputs@{ nixpkgs, flake-utils, ... }:
     flake-utils.lib.eachDefaultSystem (system: let
       pkgs = import nixpkgs {

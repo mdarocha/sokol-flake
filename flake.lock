@@ -3,11 +3,11 @@
     "fips-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1702994157,
-        "narHash": "sha256-Bb5Y8jjBTxAZ5K3jILDpX3dSD22vByB1tHZvGN3P38A=",
+        "lastModified": 1707898290,
+        "narHash": "sha256-PA06H7EqtplMH6Tvaw3ESTOwlGY/sSaqavZmcacOClg=",
         "owner": "floooh",
         "repo": "fips",
-        "rev": "c0503989977f1495ee8c920eb3194ac302f39699",
+        "rev": "55f8f170f569aa7ed4cb517288672c21d290567f",
         "type": "github"
       },
       "original": {
@@ -22,11 +22,11 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1701680307,
-        "narHash": "sha256-kAuep2h5ajznlPMD9rnQyffWG8EM/C73lejGofXvdM8=",
+        "lastModified": 1710146030,
+        "narHash": "sha256-SZ5L6eA7HJ/nmkzGG7/ISclqe6oZdOZTNoesiInkXPQ=",
         "owner": "numtide",
         "repo": "flake-utils",
-        "rev": "4022d587cbbfd70fe950c1e2083a02621806a725",
+        "rev": "b1d9ab70662946ef0850d488da1c9019f3a9752a",
         "type": "github"
       },
       "original": {
@@ -54,11 +54,11 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1704842529,
-        "narHash": "sha256-OTeQA+F8d/Evad33JMfuXC89VMetQbsU4qcaePchGr4=",
+        "lastModified": 1713714268,
+        "narHash": "sha256-ZJGnom7YthvNxUZLdUzy5VePTwYgDYcnnPpyHT4n9lY=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "eabe8d3eface69f5bb16c18f8662a702f50c20d5",
+        "rev": "69ee1d82f1fa4c70a3dc9a64111e7eef3b8e4527",
         "type": "github"
       },
       "original": {
@@ -81,11 +81,11 @@
     "sokol-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1704717894,
-        "narHash": "sha256-hmAE0a88djxbfrWQ5qVjKsnmQZrrU0tZfRULBHTiRtA=",
+        "lastModified": 1713698818,
+        "narHash": "sha256-dJJnOVfHcoDl12D1bFMMTJWqOMAqC+xbRPdjOfH0J3E=",
         "owner": "floooh",
         "repo": "sokol",
-        "rev": "a2eab57c268923338968c94436cf421e308d034d",
+        "rev": "4534e02d6c83e23fa212ac29c1fd90d8a22f5419",
         "type": "github"
       },
       "original": {
@@ -97,11 +97,11 @@
     "sokol-tools-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1703708061,
-        "narHash": "sha256-+nhTmtshfsexgKJrirduRoG1OASvhYdFyn7belen+tU=",
+        "lastModified": 1707744856,
+        "narHash": "sha256-sshoFrHmAyWhTDjIiyOg34ytUPc4cTl/1wP6owsn7R0=",
         "ref": "refs/heads/master",
-        "rev": "7337f8acad05e875c9b60a749b4274a31a69517d",
-        "revCount": 315,
+        "rev": "6362c8fa26013f6113b6689a40f8b19774afac46",
+        "revCount": 318,
         "submodules": true,
         "type": "git",
         "url": "https://github.com/floooh/sokol-tools"
